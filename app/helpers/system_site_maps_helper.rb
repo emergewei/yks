@@ -1,0 +1,2 @@
+module SystemSiteMapsHelper
+end

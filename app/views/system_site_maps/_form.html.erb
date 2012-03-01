@@ -1,0 +1,49 @@
+<%= form_for(@system_site_map) do |f| %>
+  <% if @system_site_map.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@system_site_map.errors.count, "error") %> prohibited this system_site_map from being saved:</h2>
+
+      <ul>
+      <% @system_site_map.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :parent_id %><br />
+    <%= f.text_field :parent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :is_static %><br />
+    <%= f.check_box :is_static %>
+  </div>
+  <div class="field">
+    <%= f.label :controller %><br />
+    <%= f.text_field :controller %>
+  </div>
+  <div class="field">
+    <%= f.label :action %><br />
+    <%= f.text_field :action %>
+  </div>
+  <div class="field">
+    <%= f.label :parameter %><br />
+    <%= f.text_field :parameter %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </div>
+  <div class="field">
+    <%= f.label :script %><br />
+    <%= f.text_field :script %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

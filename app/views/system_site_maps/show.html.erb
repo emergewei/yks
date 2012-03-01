@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Parent:</b>
+  <%= @system_site_map.parent_id %>
+</p>
+
+<p>
+  <b>Id:</b>
+  <%= @system_site_map.id %>
+</p>
+
+<p>
+  <b>Is static:</b>
+  <%= @system_site_map.is_static %>
+</p>
+
+<p>
+  <b>Controller:</b>
+  <%= @system_site_map.controller %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%= @system_site_map.action %>
+</p>
+
+<p>
+  <b>Parameter:</b>
+  <%= @system_site_map.parameter %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= @system_site_map.link %>
+</p>
+
+<p>
+  <b>Script:</b>
+  <%= @system_site_map.script %>
+</p>
+
+
+<%= link_to 'Edit', edit_system_site_map_path(@system_site_map) %> |
+<%= link_to 'Back', system_site_maps_path %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  parent_id: MyString
+  id: MyString
+  is_static: false
+  controller: MyString
+  action: MyString
+  parameter: MyString
+  link: MyString
+  script: MyString
+
+two:
+  parent_id: MyString
+  id: MyString
+  is_static: false
+  controller: MyString
+  action: MyString
+  parameter: MyString
+  link: MyString
+  script: MyString
